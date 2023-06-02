@@ -1,7 +1,6 @@
 <?php
-// $baseUrl = 'http://localhost:3000';
-  session_start();
-  if (isset($_SESSION['user_data'])) {
+  $session = session();
+  if ($session->has('user_data')) {
     header('location:http://localhost:3000/dashboard');
     die();
   }

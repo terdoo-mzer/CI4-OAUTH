@@ -1,6 +1,6 @@
 <?php
 
-if (isset($_SESSION['active']) && (time() - $_SESSION['active'] > 100)) {
+if (isset($_SESSION['active']) && (time() - $_SESSION['active'] > 600)) {
     header('location: http://localhost:3000/logout?logout');
     die();
 }
